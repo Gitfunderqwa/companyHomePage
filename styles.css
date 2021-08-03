@@ -38,7 +38,7 @@ nav li a{
 
 .hero {
     background: url('./hero.jpeg') no-repeat center;
-    grid-area: 2 / 1 / 9 / 13;
+    grid-area: 2 / 1 / 7 / 13;
     text-align: center;
     color: white;
 }
@@ -58,7 +58,7 @@ nav li a{
 }
 
 .c-t-a-a {
-    grid-area: 8 / 4 / 10 / 10;
+    grid-area: 6 / 4 / 8 / 10;
     color: white;
     font-size: 1.25rem;
 }
@@ -77,3 +77,23 @@ nav li a{
     opacity: 0.9;
 }
 
+.what-we-do {
+    grid-area: 8 / 1 / 11 / 13;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    background-color: darkgray;
+    padding: 30px;
+    text-align: center;
+    margin: 10px;
+    flex-basis: 100%;
+}
+
+@media only screen and (max-width: 786px) {
+    .what-we-do {
+        grid-area: 8 / 1 / 20 / 13;
+        flex-flow: wrap;
+    }
+}
